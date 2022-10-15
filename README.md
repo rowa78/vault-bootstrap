@@ -23,8 +23,12 @@ However, this tool can be extended to save Vault token and unseal Keys to a diff
 
 ## Usage
 
-Docker Image:
-[ghcr.io/spirkaa/vault-bootstrap](https://github.com/spirkaa/vault-bootstrap/pkgs/container/vault-bootstrap)*
+### Build
+
+Build for amd64 and arm64
+
+docker buildx build --platform linux/amd64,linux/arm64/v8 --no-cache -t ghcr.io/rowa78/vault-bootstrap:0.1 --push .
+
 
 ### Scenario 1 - Job
 
